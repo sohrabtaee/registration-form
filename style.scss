@@ -1,3 +1,9 @@
+$green: #009e2d;
+$red: #9e0000;
+$black: #000000;
+$gray: lighten($black, 50%);
+$white: #ffffff;
+
 @font-face {
   font-family: 'ArialMT Regular';
   font-style: normal;
@@ -22,12 +28,12 @@ body {
   margin: 0;
   line-height: 1.6;
   font-weight: 400;
-  background-color: white;
-  color: black;
+  background-color: $white;
+  color: $black;
 }
 
 .page-header {
-  background-color: black;
+  background-color: $black;
   height: 52px;
   display: flex;
   align-items: center;
@@ -35,7 +41,7 @@ body {
 
   &__title {
     margin: 0;
-    color: white;
+    color: $white;
     font-weight: normal;
     font-size: 1em;
   }
@@ -44,7 +50,8 @@ body {
 .registration {
   padding: 1em 0;
   margin: 1em;
-  border: 2px solid black;
+  border: 2px solid $black;
+  max-width: 1000px;
 
   &__fieldset {
     padding: 1em 1em 0;
@@ -57,7 +64,7 @@ body {
   }
 
   &__input {
-    border: 2px solid black;
+    border: 2px solid $black;
     padding: 1em;
     width: 100%;
   }
@@ -68,6 +75,7 @@ body {
     padding: 0;
 
     &__item {
+      display: flex;
       &:before {
         margin-right: 0.25em;
       }
@@ -75,28 +83,28 @@ body {
       &[valid='true'] {
         &:before {
           content: '\2713';
-          color: green;
+          color: $green;
         }
       }
 
       &[valid='false'] {
         &:before {
           content: '\2717';
-          color: red;
+          color: $red;
         }
       }
     }
   }
 
   &__submit {
-    background-color: black;
-    color: white;
+    background-color: $black;
+    color: $white;
     padding: 1em 2em;
     margin: 1em;
     width: calc(100% - 2em);
 
     &[disabled] {
-      background-color: rgba(black, 0.75);
+      background-color: $gray;
       cursor: not-allowed;
     }
   }
