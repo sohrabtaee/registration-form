@@ -19,6 +19,10 @@ After installing Node js, open your terminal (command line) in the root director
 
 After the installation, you can run the command `npm run dev` to start the app. It will be served on [http://localhost:1234](http://localhost:1234).
 
+## Running unit tests
+
+You can run the unit tests using the command `npm run unit-tests`.
+
 ## Tools Used
 
 There are no CSS or JS libraries used for this project. However these tools have been used:
