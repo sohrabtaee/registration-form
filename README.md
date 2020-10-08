@@ -27,3 +27,4 @@ There are no CSS or JS libraries used for this project. However these tools have
 - Eslint as the linter
 - Prettier as the code formatter
 - Sass as the css preprocessor
+- Jest as the test runner for unit tests
