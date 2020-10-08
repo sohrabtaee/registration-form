@@ -1,0 +1,29 @@
+{
+  "name": "registration-form",
+  "version": "1.0.0",
+  "description": "Registration from",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sohrabtaee/registration-form.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sohrabtaee/registration-form/issues"
+  },
+  "homepage": "https://github.com/sohrabtaee/registration-form#readme",
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.1.2",
+    "sass": "^1.27.0"
+  }
+}
