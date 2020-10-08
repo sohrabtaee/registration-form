@@ -66,6 +66,26 @@ body {
     list-style-type: none;
     margin: 1em 0;
     padding: 0;
+
+    &__item {
+      &:before {
+        margin-right: 0.25em;
+      }
+
+      &[valid='true'] {
+        &:before {
+          content: '\2713';
+          color: green;
+        }
+      }
+
+      &[valid='false'] {
+        &:before {
+          content: '\2717';
+          color: red;
+        }
+      }
+    }
   }
 
   &__submit {
